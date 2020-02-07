@@ -3,49 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">  
+  <script type="text/javascript" src="JS/main.js"></script>
 </head>
 <body>
   <section class="header">
     <h1>Portfolio</h1>
-    <p>富永　孝彦</p>
+    <p class="name">富永 孝彦</p>
+    <!-- <div id="page_profile"><a href="#link"></a> -->
   </section>
 
-  <section class="profile">
+  <section class="profile" id="link">
+    <!-- <img src="images/vypocetni-2048165_1920.jpg"> -->
     <div class='profile-box'>
       <div class='profile-pic'>
-        <img class="profile-image" src="IMG_4775.JPG">
+        <img class="profile-image" src="images/IMG_4775.JPG">
       </div>
-      <div class='profile-textbox'></div>
+      <div class='profile-textbox'>~プロフィール~<br>はじめまして。平成7年生まれの24歳エンジニア富永と申します。新卒では不動産営業の会社に入社しました。<br>独学でプログラミングを学習しておりましたが、本格的に学んで見たいと考え2019年10月TECH::EXPERTの夜間に入学。2020年1月から短期コースに編入をしました。<br>今後はWebアプリケーションを中心に作成を行なって行こうと考えております。その上でバックエンド言語をもう一つ習得しようと考えております。<br>~プライベート~<br>個人的には英語を勉強し海外旅行などに行き自身の言葉で話せるようにしていきます。<br>~趣味~<br>ゲーム、サッカー、旅行（2019年1月30日更新）</div>
     </div>
   </section>
 
   <section class="bar">
     <!-- <div class = "container"> -->
     <ul class = "menu">
-      <li class="btn"><a href="#" id="skills" class="menu_item active">skills</a></li>
-      <li class="btn"><a href="#" id="works" class="menu_item">works</a></li>
-      <li class="btn"><a href="#" id="dream" class="menu_item">dream</a></li>
+      <li class="btn active"><a id="skills" class="menu_item">skills</a></li>
+      <li class="btn"><a id="works" class="menu_item">works</a></li>
+      <!-- <li class="btn"><a id="dream" class="menu_item">dream</a></li> -->
     </ul>
     <!-- </div> -->
   </section>
   <section class="main">
     <ul class = "contents">
       <li class="content show">
-        
+        <div class="front">
+          <div class="icon">
+            <i class="fas fa-desktop"></i>
+            <p class="subtittle">
+              マークアップ
+            </p>
+          </div>
+          <ul>
+            <li class="sub">HTML(+haml)</li>
+            <li class="sub">CSS(+scss)</li>
+            <li class="sub">JavaScript(+jQuery)</li>
+          </ul>
+        </div>
+        <div class="back">
+          <div class="icon">
+            <i class="fas fa-hdd"></i>
+            <p class="subtittle">
+              バックエンド
+            </p>
+          </div>
+          <ul>
+            <li class="sub">Ruby(+Ruby on Rails)</li>
+          </ul>
+        </div>
+        <div class="DB">
+          <div class="icon">
+            <i class="fas fa-database"></i>
+            <p class="subtittle">
+              DB,サーバー
+            </p>
+          </div>
+          <ul>
+            <li class="sub">MySQL</li>
+            <li class="sub">aws(EC2,S3)</li>
+          </ul>
+        </div>
+        <div class="ather">
+          <div class="icon">
+            <i class="fas fa-plus"></i>
+            <p class="subtittle">
+              その他
+            </p>
+          </div>
+          <ul>
+            <li class="sub">Git(+GitHub)</li>
+            <li class="sub">Slack</li>
+            <li class="sub">CLIPSTUDIO PAINT</li>
+          </ul>
+        </div>
       </li>
-      <li class="content"></li>
+      <li class="content">
+        <div class="data">
+          <div class="data_box">
+            <div class="data_left">
+              <p class="tittle" >Fmarket</p>
+              <img src="images/Fmarket.jpg" class="image">
+              <ul class="list_box">
+                <li class="list_tab1">HTML</li>
+                <li class="list_tab2">CSS</li>
+                <li class="list_tab3">JavaScript</li>
+                <li class="list_tab4">Ruby on Rails</li>
+              </ul >
+            </div>
+            <div class="data_right">
+              <h4>こだわったポイント</h4>
+                <p class="text">チーム開発として、フリマアプリの作成を行いました。商品出品の機能で本物と同じように画僧のドラッグアンドドロップや金額の計算を自動で行えるようにしました。使用はできませんが、ヘッダー部分にプルダウンメニュー機能も実装しました。</p>
+              <h4>一言</h4>
+                <p class="text">チーム開発を初めて行いました。進捗の管理や納期を意識しながらの開発は、メンバー間との協力及び情報共有が非常に大事だと感じました。</p>
+            </div>
+          </div>
+          <div class="icon">
+            <a class="icon2" href= "https://github.com/takapi327/freemarket_sample_66c">
+              <i class="fab fa-github"></i>
+              <div class="data_bottom">GitHubへ</div>
+            </a>
+          </div>
+        </div>
+        <div class="data">
+          <div class="data_box">
+            <div class="data_left">
+              <p class="tittle">Portfolio</p>
+              <img src="images/portfolio.png" class="image" >
+              <ul class="list_box">
+                <li class="list_tab1">HTML</li>
+                <li class="list_tab2">CSS</li>
+                <li class="list_tab3">JavaScript</li>
+              </ul >
+            </div>
+            <div class="data_right">
+              <h4>こだわったポイント</h4>
+                <p class="text">見やすくするためにJSのタブ切り替え機能を使用しました。何の言語を使用して開発がされたのかを見てすぐにわかるように色分けをして表示しました。該当のGitHubにすぐに飛べるようにボタンをすぐ下に配置しました。</p>
+              <h4>一言</h4>
+                <p class="text">シンプルさを重視しつつ明るいイメージのPotfolioにしました。</p>
+            </div>
+          </div>
+          <div class="icon">
+            <a class="icon2" href= "https://github.com/takapi327/Portfolio">
+              <i class="fab fa-github"></i>
+              <div class="data_bottom">GitHubへ</div>
+            </a>
+          </div>
+        </div>
+        <div class="data">
+          <div class="data_box">
+            <div class="data_left">
+              <p class="tittle">POKEMON clone</p>
+              <img src="images/Pokemon.png" class="image" >
+              <ul class="list_box">
+                <li class="list_tab1">HTML</li>
+                <li class="list_tab2">CSS</li>
+                <li class="list_tab3">JavaScript</li>
+                <li class="list_tab5">CLIP STUDIO PAINT</li>
+              </ul >
+            </div>
+            <div class="data_right">
+              <h4>こだわったポイント</h4>
+                <p class="text">ドット絵をCLIPSTUDIO PAINTを使用して作成を行いました。バトル画面で相手と自身を表示させてバトルしている間を出しました。</p>
+              <h4>一言</h4>
+                <p class="text">JavaScriptをメインにして作成することは、非常に難しった。簡単なRPGであればネットに記述があるが、スタート画面などをネットに情報がないものを実装するのも難しかった。</p>
+            </div>
+          </div>
+          <div class="icon">
+            <a class="icon2" href= "https://github.com/takapi327/individual_appli">
+              <i class="fab fa-github"></i>
+              <div class="data_bottom">GitHubへ</div>
+            </a>
+          </div>
+        </div>
+      </li>
       <li class="content"></li>
     </ul>
   </section>
 
   <section class="links">
     <div class = "page">
-      <li class="link"><a href= "#" target="_blank" >Blog</a></li>
+      <!-- <li class="link"><a href= "#" target="_blank" >Blog</a></li> -->
       <li class="link"><a href= "https://twitter.com/@takapi327" target="_blank" >Twitter</a></li>
       <li class="link"><a href= "https://github.com/takapi327" target="_blank" >Github</a></li>
     </div>
+    <!-- <div id="page_top"><a href="#"></a> -->
   </section>
 </body>
 </html>
