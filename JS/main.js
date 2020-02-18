@@ -1,23 +1,99 @@
 window.onload = ()=>{
+  $(function(){
+    var effect_pos = 250; // 画面下からどの位置でフェードさせるか(px)
+    var effect_move = 50; // どのぐらい要素を動かすか(px)
+    var effect_time = 800; // エフェクトの時間(ms) 1秒なら1000
   
-  let tab = document.getElementsByClassName('btn');
-
-  tabsAry = Array.prototype.slice.call(tab);
-
-  function tabSwich(){
-    document.getElementsByClassName("active")[0].classList.remove("active");
-
-    this.classList.add("active");
-
-    document.getElementsByClassName("show")[0].classList.remove("show");
-
-    const index = tabsAry.indexOf(this);
-    
-    document.getElementsByClassName("content")[index].classList.add("show");
-  }
-
-  tabsAry.forEach(function(value){
-    value.addEventListener("click", tabSwich);
+    // フェードする前のcssを定義
+    $('.profile').css({
+        opacity: 0,
+        transform: 'translateY('+ effect_move +'px)',
+        transition: effect_time + 'ms'
+    });
+  
+    // スクロールまたはロードするたびに実行
+    $(window).on('scroll load', function(){
+        var scroll_top = $(this).scrollTop();
+        var scroll_btm = scroll_top + $(this).height();
+        effect_pos = scroll_btm - effect_pos;
+  
+        // effect_posがthis_posを超えたとき、エフェクトが発動
+        $('.profile').each( function() {
+            var this_pos = $(this).offset().top;
+            if ( effect_pos > this_pos ) {
+                $(this).css({
+                    opacity: 1,
+                    transform: 'translateY(0)'
+                });
+            }
+        });
+    });
   });
 
+  $(function(){
+    $(window).scroll(function (){
+        $('.front').each(function(){
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight + 300){
+                $(this).addClass('scrollin');
+            }
+        });
+    });
+  });
+  function addSticky() {
+    $('.slide').each(function() {
+      var scrollerAnchor = $(this).offset().top;
+      if (window.scrollY >= scrollerAnchor) {
+        $(this).addClass('fix-it');
+      } else {
+        $(this).removeClass('fix-it');
+      }
+    });
+  }
+  
+  $(window).scroll(function() {
+    addSticky();
+  });
+
+  mouseOn();
+  mouseOff();
+
+var window_h = $(window).height();
+//スクロールイベント
+$(window).on("scroll", function() {
+  var scroll_top = $(window).scrollTop();
+  $(".data").each(function() {
+    var elem_pos = $(this).offset().top;
+    //どのタイミングでフェードインさせるか
+    if (scroll_top >= elem_pos - window_h+500) {
+      $(this).addClass("fadein");
+    } else {
+      $(this).removeClass("fadein");
+    }
+  });
+});
 }
+
+//マウスオーバー時の処理
+function mouseOn(){
+  var obj = document.getElementById("img");
+  obj.src = "images/Fmarket.gif";
+  var obj2 = document.getElementById("img2");
+  obj2.src = "images/Pokemon1.gif";
+  var obj3 = document.getElementById("img3");
+  obj3.src = "images/skill-up_language.gif";
+}
+
+//マウスアウト時の処理
+function mouseOff(){
+  var obj = document.getElementById("img");
+  obj.src = "images/Fmarket.jpg";
+  var obj2 = document.getElementById("img2");
+  obj2.src = "images/Pokemon.png";
+  var obj3 = document.getElementById("img3");
+  obj3.src = "images/skill-up_language.png";
+}
+
+
