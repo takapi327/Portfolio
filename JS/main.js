@@ -93,7 +93,7 @@ function mouseOff(){
   var obj2 = document.getElementById("img2");
   obj2.src = "images/Pokemon.png";
   var obj3 = document.getElementById("img3");
-  obj3.src = "images/skill-up_language.png";
+  obj3.src = "images/test.png";
 }
 
 
