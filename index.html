@@ -10,70 +10,75 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
-  <section class="header">
-    <h1>Portfolio</h1>
-    <p class="name">富永 孝彦</p>
+  <a href="#d" class="fas fa-arrow-circle-up"></a>
+  <a href="#a" class="scrolle1">Profile</a>
+  <a href="#b" class="scrolle2">Skill</a>
+  <a href="#c" class="scrolle3">Works</a>
+  <section class="header" id="d">
+    <ul class="portfolio">
+      <li class="name">TAKAHIKO TOMINAGA'S</li>
+      <li class="h1">PORTFOLIO</li>
+      <li class="subname">Webエンジニア トミナガタカヒコ</li>
+    </ul>
+    <ul class="tablist">
+      <a href="#a" class="list">Profile</a>
+      <a href="#b" class="list">Skill</a>
+      <a href="#c" class="list">Works</a>
+    </ul>
   </section>
-
-  <section class="profile slide" id="link">
-    <div class='profile-box'>
-      <div class='profile-pic'>
-        <img class="profile-image" src="images/IMG_4775.JPG">
+  <section class="mainbox" id="a">
+    <section class="profile slide" id="link">
+      <img class="profile-image" src="images/IMG_4775.JPG">
+      <p class="fullname">富永孝彦</p>
+      <p class="fullname2">Takahiko Tominaga</p>
+      <div class="iconbox">
+        <a href= "https://github.com/takapi327" target="_blank" class="fab fa-github"></a>
+        <a href= "https://twitter.com/@takapi327" target="_blank" class="fab fa-twitter"></a>
       </div>
-      <div class='profile-textbox'>~プロフィール~<br>はじめまして。平成7年生まれの24歳エンジニア富永と申します。新卒では不動産営業の会社に入社しました。<br>独学でプログラミングを学習しておりましたが、本格的に学んで見たいと考え2019年10月TECH::EXPERTの夜間に入学。2020年1月から短期コースに編入をしました。<br>今後はWebアプリケーションを中心に作成を行なって行こうと考えております。その上でバックエンド言語をもう一つ習得しようと考えております。<br>~プライベート~<br>個人的には英語を勉強し海外旅行などに行き自身の言葉で話せるようにしていきます。<br>~趣味~<br>ゲーム、サッカー、旅行（2019年3月2日更新）</div>
-    </div>
-  </section>
-  <section class="main">
-    <div class="front">
-      <div class="icon">
+    <div class='profile-textbox'>~プロフィール~<br>はじめまして。平成7年生まれの24歳エンジニア富永と申します。新卒では不動産営業の会社に入社しました。<br>独学でプログラミングを学習しておりましたが、本格的に学んで見たいと考え2019年10月TECH::EXPERTの夜間に入学。2020年1月から短期コースに編入をしました。<br>今後はWebアプリケーションを中心に作成を行なって行こうと考えております。その上でバックエンド言語をもう一つ習得しようと考えております。<br>~プライベート~<br>個人的には英語を勉強し海外旅行などに行き自身の言葉で話せるようにしていきます。<br>~趣味~<br>ゲーム、サッカー、旅行（2019年3月2日更新）</div>
+    </section>
+    <section class="main" id="b">
+      <div class="front">
         <i class="fas fa-desktop">マークアップ</i>
+        <ul class="sublist">
+          <li class="sub"><div class="surcle"><img src="images/html-5.svg" width="80" height="80" class="language"></div>HTML</li>
+          <li class="sub"><div class="surcle"><img src="images/css-3.svg" width="80" height="80" class="language"></div>CSS</li>
+          <li class="sub"><div class="surcle"><img src="images/javascript.svg" width="60" height="60" class="language-js"></div>JavaScript</li>
+        </ul>
       </div>
-      <ul class="sublist">
-        <li class="sub"><div class="surcle"><img src="images/html-5.svg" width="80" height="80" class="language"></div></li>
-        <li class="sub"><div class="surcle"><img src="images/css-3.svg" width="80" height="80" class="language"></div></li>
-        <li class="sub"><div class="surcle"><img src="images/javascript.svg" width="60" height="60" class="language-js"></div></li>
-      </ul>
-    </div>
-    <div class="front">
-      <div class="icon">
+      <div class="front">
         <i class="fas fa-hdd">バックエンド</i>
+        <ul class="sublist">
+          <li class="sub"><div class="surcle"><img src="images/ruby.svg" width="60" height="60" class="language-js"></div>Ruby</li>
+          <li class="sub"><div class="surcle"><img src="images/scala.svg" width="80" height="80" class="language"></div>Scala</li>
+        </ul>
       </div>
-      <ul class="sublist">
-        <li class="sub"><div class="surcle"><img src="images/ruby.svg" width="60" height="60" class="language-js"></li>
-        <li class="sub"><div class="surcle"><img src="images/scala.svg" width="80" height="80" class="language"></li>
-      </ul>
-    </div>
-    <div class="front">
-      <div class="icon">
+      <div class="front">
         <i class="fas fa-laptop">フレームワーク</i>
+        <ul class="sublist">
+          <li class="sub"><div class="surcle"><img src="images/rails.svg" width="80" height="80" class="language"></div>Ruby on Rails</li>
+          <li class="sub"><div class="surcle"><img src="images/play.svg" width="80" height="80" class="language"></div>Play Framework</li>
+        </ul>
       </div>
-      <ul class="sublist">
-        <li class="sub"><div class="surcle"><img src="images/rails.svg" width="80" height="80" class="language"></div></li>
-        <li class="sub"><div class="surcle"><img src="images/play.svg" width="80" height="80" class="language"></div></li>
-      </ul>
-    </div>
-    <div class="front">
-      <div class="icon">
+      <div class="front">
         <i class="fas fa-database">DB,サーバー</i>
+        <ul class="sublist">
+          <li class="sub"><div class="surcle"><img src="images/mysql.svg" width="60" height="60" class="language-js"></div>MySQL</li>
+          <li class="sub"><div class="surcle"><img src="images/aws.svg" width="60" height="60" class="language-js"></div>aws</li>
+        </ul>
       </div>
-      <ul class="sublist">
-        <li class="sub"><div class="surcle"><img src="images/mysql.svg" width="60" height="60" class="language-js"></li>
-        <li class="sub"><div class="surcle"><img src="images/aws.svg" width="60" height="60" class="language-js"></li>
-      </ul>
-    </div>
-    <div class="front">
-      <div class="icon">
+      <div class="front">
         <i class="fas fa-plus">その他</i>
+        <ul class="sublist">
+          <li class="sub"><div class="surcle"><img src="images/visual-studio-code.svg" width="60" height="60" class="language-js"></div>VS code</li>
+          <li class="sub"><div class="surcle"><img src="images/github-octocat.svg" width="60" height="60" class="language-js"></div>Git</li>
+          <li class="sub"><div class="surcle"><img src="images/slack-icon.svg" width="60" height="60" class="language-js"></div>Slack</li>
+          <li class="sub"><div class="surcle"><img src="images/clista.jpg" width="60" height="60" class="language-js"></div>CLIPSTUDIOPAINT</li>
+        </ul>
       </div>
-      <ul class="sublist">
-        <li class="sub"><div class="surcle"><img src="images/visual-studio-code.svg" width="60" height="60" class="language-js"></li>
-        <li class="sub"><div class="surcle"><img src="images/github-octocat.svg" width="60" height="60" class="language-js"></li>
-        <li class="sub"><div class="surcle"><img src="images/slack-icon.svg" width="60" height="60" class="language-js"></li>
-        <li class="sub"><div class="surcle"><img src="images/clista.jpg" width="60" height="60" class="language-js"></li>
-      </ul>
-    </div>
+    </section>
   </section>
-  <div class="data">
+  <div class="data" id="c">
     <div class="data_box">
       <div class="data_top">
         <p class="tittle" >Fmarket</p>
@@ -184,11 +189,12 @@
       GitHubへ
     </a>
   </div>
-  <section class="links">
-    <div class = "page">
+  <!-- <section class="links"> -->
+    <!-- <a href="#d" class="fas fa-arrow-circle-up"></a> -->
+    <!-- <div class = "page">
       <li class="link"><a href= "https://twitter.com/@takapi327" target="_blank" >Twitter</a></li>
       <li class="link"><a href= "https://github.com/takapi327" target="_blank" >Github</a></li>
-    </div>
-  </section>
+    </div> -->
+  <!-- </section> -->
 </body>
 </html>
