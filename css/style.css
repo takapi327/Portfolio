@@ -113,6 +113,24 @@ html{
   box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
 }
 
+.art{
+  padding: 50px;
+  border-top: solid 1px #CCCCCC;
+  background-color: rgba(163, 163, 163, 0.1);
+  /* box-shadow:rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+}
+
+.works{
+  text-align: center;
+  font-size: 40px;
+  color: #333333;
+  letter-spacing:10px;
+  font-family: serif;
+  border-bottom: solid 1px #000099;
+  width: 200px;
+  margin: 0 auto;
+}
+
 .scrolle1{
   height: 50px;
   width: 50px;
@@ -193,7 +211,7 @@ html{
   width: 200px;
   object-fit: cover;
   border-radius:150px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .profile-textbox{
@@ -350,6 +368,10 @@ a{
   transition:opacity 1s,transform 0.5s;
 }
 
+/* .data_box{
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
+} */
+
 .fadein{
   opacity:1;
   transform:translateX(0);
@@ -359,18 +381,31 @@ a{
   margin: 20px auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .data-main{
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+.data_right{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.data_bottom{
+  margin: 20px auto;
+  font-family: sans-serif;
 }
 
 .image{
-  height: 500px;
-  width: 800px;
-  margin: 0 10px;
+  height: 400px;
+  width: 400px;
+  margin: 10px 20px;
 }
 
 .list_box{
@@ -432,16 +467,11 @@ a{
   font-family: sans-serif;
 }
 
-.data_right{
+._right{
   width: 500px;
   padding: 5px;
-  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
+  /* box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2); */
   /* background-color: rgba(238, 238, 238, 0.5); */
-}
-
-.data_bottom{
-  margin: 20px auto;
-  font-family: sans-serif;
 }
 
 .btn{
