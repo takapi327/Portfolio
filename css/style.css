@@ -7,6 +7,31 @@
   background-color: #fff;
 } */
 
+.headerbtn{
+  text-align: center;
+  /* background-color: rgba(132, 179, 252, 0.8); */
+  width: 50%;
+  margin: 0 auto;
+  height: 60px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* border-bottom: solid 1px rgba(132, 179, 252, 0.8);
+  border-left: solid 1px rgba(132, 179, 252, 0.8);
+  border-right: solid 1px rgba(132, 179, 252, 0.8); */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+.scrolle{
+  line-height: 60px;
+  padding: 29px;
+  color: rgba(132, 179, 252, 0.8);
+  font-size: 25px;
+}
+
+.scrolle:hover{
+  opacity: 0.5;
+}
+
 .portfolio{
   padding-top: 150px;
 }
@@ -131,7 +156,7 @@ html{
   margin: 0 auto;
 }
 
-.scrolle1{
+/* .scrolle1{
   height: 50px;
   width: 50px;
   line-height: 50px;
@@ -191,16 +216,7 @@ html{
   -webkit-transform: translateX(-10px);
   -ms-transform: translateX(-10px);
   transform: translateX(-10px) ;
-}
-.fa-arrow-circle-up{
-  position: fixed;
-  right: 0;
-  top: 550px;
-  z-index: 1;
-  color: #0066CC;
-  font-size: 4rem;
-  align-items: center;
-}
+} */
 
 .profile {
   text-align: center;
@@ -578,4 +594,39 @@ h4{
 @-webkit-keyframes fadeIn {
   0% {opacity: 0}
   100% {opacity: 1}
+}
+
+footer{
+  padding: 80px 0;
+  border-top: solid 1px #CCCCCC;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footername{
+  font-family: Georgia;
+  color: #555555;
+  font-size: 20px;
+  padding-top: 15px;
+  width: 33%;
+}
+
+.fa-chevron-up{
+  width: 33%;
+  text-align: center;
+}
+
+.footerbox{
+  width: 33%;
+  text-align: center;
+}
+
+.footerbtn{
+  font-size: 1rem;
+  color: #555555;
+  letter-spacing:10px;
 }
